@@ -1,0 +1,73 @@
+body 
+ { font-family: Arial, sans-serif;
+     margin: 0; 
+     background: #f4f6f8; 
+    }
+header {
+     background: #2d3e50; 
+     color: #fff;
+      padding: 
+      1rem 2rem; 
+    }
+.container { 
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem; 
+    background: #fff; 
+    border-radius: 8px; 
+}
+h1 { margin: 0; }
+.stats { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin-bottom: 2rem;
+ }
+.card {
+    flex: 1;
+    background: #e9ecef;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+}
+.card h2 { 
+    margin: 0.5rem 0 0 0;
+     font-size: 2rem; }
+.chart-container { 
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+canvas { background: #fff; 
+    border-radius: 8px; }
+.chart-section{
+    height: 450px;
+    width: 450px;
+}
+.dropDown{
+    text-align: center;
+}
+select{
+    background-color: #000000;
+    color:#59eeff;
+    height: 30px;
+    padding:10px ;
+    padding-bottom: 30px;
+    border-radius: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+option{
+    text-align: center;
+}
+.general-charts{
+    display: flex;
+    overflow: auto;
+}

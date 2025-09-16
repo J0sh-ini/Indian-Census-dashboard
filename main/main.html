@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indian Census</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Census of India 2011</h1>
+    </header>
+   <div class="dropDown"> <select name="location" id="location-select">
+        <option value="India">--Please choose an option--</option>
+        <option value="India">India</option>
+        <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="Haryana">Haryana</option>
+        <option value="NCT of Delhi">NCT of Delhi</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Assam">Assam</option>
+        <option value="West Bengal">West Bengal</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Daman & Diu">Daman & Diu</option>
+        <option value="Dadra & Nagar Haveli">Dadra & Nagar Haveli</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Goa">Goa</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Puducherry">Puducherry</option>
+        <option value="Andaman & Nicobar">Andaman & Nicobar Islands</option>
+    </select>
+   </div>
+    <div class="container">
+        <div class="stats">
+            <div class="card">
+                <div>Total Population</div>
+                <h2 id="total-population">0</h2>
+            </div>
+            <div class="card">
+                <div>Total Males</div>
+                <h2 id="total-males">0</h2>
+            </div>
+            <div class="card">
+                <div>Total Females</div>
+                <h2 id="total-females">0</h2>
+            </div>
+        </div>
+         <div class="stats">
+                <div class="card">
+                <div>Total Area</div>
+                <h2 id="total-area">0</h2>
+                </div>
+                <div class="card">
+                <div>Average household residents</div>
+                <h2 id="total-house">0</h2>
+                </div>
+        </div>
+        
+
+        <div class="chart-container">
+           
+            <div class="chart-section" >
+    <canvas id="pieChart1" class="pieChart"></canvas>
+            </div>
+            <div class="chart-section" >
+    <canvas id="pieChart2" class="pieChart"></canvas>
+            </div>
+            <div class="chart-section" >
+    <canvas id="pieChart3" class="pieChart"></canvas>
+            </div>
+            <div class="chart-section" >
+    <canvas id="pieChart4" class="pieChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="general-charts" >
+        <canvas id="barChart"></canvas>
+    </div>
+    <div class="general-charts" >
+        <canvas id="lineChart"></canvas>
+    </div>
+<!--  <div class="general-charts" >
+        <canvas id="bubbleChart"></canvas>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>     
+    <script src="main.js"></script> 
+</body>
+</html>
