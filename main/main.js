@@ -156,6 +156,7 @@ function createLineChart()
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: {
                     title: {
                         display: true,
@@ -240,7 +241,7 @@ const myBarChart = new Chart(ctx, {
         },
         plugins :{
             responsive:true,
-            maintainAspectRation:false,
+            maintainAspectRatio: false,
             legend:{
                 display:false
             },
